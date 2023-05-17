@@ -1,14 +1,5 @@
-Node, Express & ES6 REST API Starter Kit
+MINSASLT CODE CHALLENGE NODEJS AND GRAPHQL
 ========================================
-
-This is a straightforward starter kit for building REST APIs with ES6 and Express.This project contains the following.
-
-- [x] HTTP API server using Express
-- [x] CORS support
-- [x] Best Practice Structure
-- [x] JWT middleware for authorization
-- [x] ES6 support via [babel](https://babeljs.io)
-- [x] Body Parsing via [body-parser](https://github.com/expressjs/body-parser)
 
 Getting Started
 ---------------
@@ -16,41 +7,29 @@ Getting Started
 ```sh
 
 1. Clone repo    
-`git clone https://github.com/suvankar-kundu/node-express-es6-boilerplate.git <dir_name>`    
 
 2. Change directory    
 `cd <dir_name>`    
 
-3. Remove git folder    
-*nix: `rm -rf ./.git`    
-win: `RD /S /Q .git`    
+3. Install packages    
+`yarn` or `npm install`  
 
-4. Edit **package.json**    
-Change `name, version, description, repository, author, bugs, homepage`    
+4. Check your `.env` and put this information in this file:
 
-5. Install packages    
-`npm install`    
+`
+DB_USER=yurimusti
+DB_NAME=minsair
+DB_NAME_DEV=minsair_dev
+DB_PASSWORD=4NKtOPiYFI3wXgOo
+DB_URL=@cluster0.7ktnrwz.mongodb.net/
+SECRET=4NKminsair2023tOPiYFI3wXgOo
+ENV=production
+`
+5. Open your API using:
+`yarn start:dev`
 
-6. Update packages    
-`npm update`    
+6. Testing:
+Open https://studio.apollographql.com/sandbox/explorer and use the documentation to test the information ;)
 
 ```
-
-Command
---------
-1. Run `npm run build`    
-Transpile ES6 to **dist** directory. 
-
-2. Run `npm run start`    
-This will start the application with specific port.
-
-3. Run `npm run lint`    
-This will check eslint error.
-
-4. Run `npm run test`    
-This will run all the test cases.
-
-License
--------
-
 MIT
