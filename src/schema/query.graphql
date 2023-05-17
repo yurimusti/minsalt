@@ -1,0 +1,7 @@
+type Query {
+    # Comerciante
+    loginComerciante(input: LoginComercianteInput): ComercianteResponse
+    getInfoComerciante(input: GetInfoComercianteInput): ComercianteResponse
+    # Produtos
+    getAllProdutos: ProdutosResponse
+}

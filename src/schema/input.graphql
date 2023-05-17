@@ -1,0 +1,56 @@
+input CreateComercianteInput {
+    nomeComerciante: String
+    email: String
+    password: String
+    cpf: String
+    produtosVendidos: [ProdutosVendidosInput]
+}
+
+input ProdutosVendidosInput {
+    produtoId: String
+    quantidade: String
+    createdAt: String
+    updatedAt: String
+}
+
+input LoginComercianteInput {
+    email: String!
+    password: String!
+}
+
+input UpdateComercianteInput {
+    _id: String!
+    nomeComerciante: String
+    email: String
+    cpf: String
+}
+
+input DeleteComercianteInput {
+    comercianteId: String!
+}
+
+input GetInfoComercianteInput {
+    accessToken: String!
+}
+
+input CreateProductInput {
+    nome: String!
+    preco: Float!
+}
+
+input UpdateProductInput {
+    _id: String!
+    nome: String!
+    preco: Float!
+    status: Boolean!
+}
+
+input DeleteProductInput {
+    idProduct: String
+}
+
+input LancarProdutoDistribuidora {
+    idComerciante: String!
+    idProduto: String!
+    quantidade: Int!
+}

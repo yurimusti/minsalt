@@ -1,0 +1,14 @@
+type Mutation {
+    # Comerciante
+    createComerciante(input: CreateComercianteInput): ComercianteResponse
+    updateComerciante(input: UpdateComercianteInput): ComercianteResponse
+    deleteComerciante(input: DeleteComercianteInput): ComercianteResponse
+    # Produto
+    createProduct(input: CreateProductInput): CreateProductResponse
+    updateProduct(input: UpdateProductInput): UpdateProductResponse
+    deleteProduct(input: DeleteProductInput): DeleteProductResponse
+    # Lançamento
+    adicionarProdutoEmComerciante(
+        input: LancarProdutoDistribuidora
+    ): LancarProdutoDistribuidoraResponse
+}

@@ -1,0 +1,57 @@
+type Comerciante {
+    _id: String
+    email: String
+    nomeComerciante: String
+    produtosVendidos: [ProdutosVendidos]
+    createdAt: String
+    updatedAt: String
+}
+
+type ProdutosVendidos {
+    _id: String!
+    nome: String
+    preco: Float
+}
+
+type Status {
+    status: Int!
+    message: String
+    accessToken: String
+}
+
+type Produtos {
+    _id: String
+    nome: String
+    preco: Float
+    status: Boolean
+}
+
+type ComercianteResponse {
+    data: Comerciante
+    status: Status
+}
+
+type ProdutosResponse {
+    data: [Produtos]
+    status: Status
+}
+
+type CreateProductResponse {
+    data: [Produtos]
+    status: Status
+}
+
+type UpdateProductResponse {
+    data: [Produtos]
+    status: Status
+}
+
+type DeleteProductResponse {
+    data: [Produtos]
+    status: Status
+}
+
+type LancarProdutoDistribuidoraResponse {
+    data: Comerciante
+    status: Status
+}
